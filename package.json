@@ -1,0 +1,74 @@
+{
+    "name": "@avanio/odata",
+    "version": "0.0.1",
+    "description": "Oasis Open for Javascript",
+    "main": "./dist/index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "mocha": {
+        "exit": true,
+        "extension": [
+            "ts",
+            "js"
+        ],
+        "recursive": true,
+        "require": [
+            "ts-node/register",
+            "source-map-support/register"
+        ],
+        "reporters": [
+            "spec",
+            "mocha-junit-reporter"
+        ]
+    },
+    "nyc": {
+        "extension": [
+            ".ts"
+        ],
+        "include": [
+            "src"
+        ],
+        "reporter": [
+            "text",
+            "html"
+        ],
+        "all": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AvanioOy/odata.git"
+    },
+    "keywords": [
+        "odata",
+        "oasis",
+        "open"
+    ],
+    "author": "mharj",
+    "license": "LGPL-2.1",
+    "bugs": {
+        "url": "https://github.com/AvanioOy/odata/issues"
+    },
+    "homepage": "https://github.com/AvanioOy/odata#readme",
+    "devDependencies": {
+        "@types/chai": "^4.3.3",
+        "@types/mocha": "^9.1.1",
+        "@types/node": "^18.7.18",
+        "@types/xmldom": "^0.1.31",
+        "@typescript-eslint/eslint-plugin": "^5.33.1",
+        "@typescript-eslint/parser": "^5.33.1",
+        "chai": "^4.3.6",
+        "eslint": "^8.22.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-react-app": "^7.0.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "mocha": "^10.0.0",
+        "source-map-support": "^0.5.21",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.8.3",
+        "xml-formatter": "^2.6.1"
+    },
+    "dependencies": {
+        "xmldom": "^0.6.0"
+    }
+}
